@@ -9,7 +9,7 @@ function updateview(){
     for(let i = 0; i < model.handlekurv.length; i++){
         let minevarer = model.handlekurv[i];
         HTML += /*HTML*/ `
-        <li style ="display: flex flexdirection: column">
+        <li>
         <p>Vare: ${minevarer.navn}</p>
         <p>Pris: ${minevarer.pris} kr</p>
         <p>antall: ${minevarer.antall} stk</p>
@@ -20,7 +20,7 @@ function updateview(){
 
 
     HTML += /*HTML*/ `
-    <p>Totalt å betale: ${totalPrice()} kr</p>
+    <u>Totalt å betale: ${totalPrice()}</u>
     </ul>
     
     `
